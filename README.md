@@ -20,19 +20,19 @@ During runtime, it is likely the access token will expire. When calls to updateD
 
 ## Compile This Project
 If you wish to run this project as-is, you'll need to update the main.cpp and twitch.h define fields. You'll need to update:
-*SSID - your wifi's ssid
-*password - your wifi's password
-*TWITCH_CLIENT_ID - the client ID when creating an application in the Twitch Dev site
-*TWITCH_CLIENT_SECRET - the client secret after creating the application
-*TWITCH_USER_ID - your Twitch account ID. You'll need to find this yourself using a GET command or using a 3rd party site.
-*TWITCH_APP_TOKEN - when you make your app, you'll need to get OAuth authorized. You'll want the code it returns such as in the localhost address.
+* SSID - your wifi's ssid
+* password - your wifi's password
+* TWITCH_CLIENT_ID - the client ID when creating an application in the Twitch Dev site
+* TWITCH_CLIENT_SECRET - the client secret after creating the application
+* TWITCH_USER_ID - your Twitch account ID. You'll need to find this yourself using a GET command or using a 3rd party site.
+* TWITCH_APP_TOKEN - when you make your app, you'll need to get OAuth authorized. You'll want the code it returns such as in the localhost address.
 
 Using a Wemos D1 Mini, I have the following pins from the board to the LED matrix:
-*VCC = 5V
-*GND = G
-*DIN = D8
-*CS = D7
-*CLK = D5
+* VCC = 5V
+* GND = G
+* DIN = D8
+* CS = D7
+* CLK = D5
 
 This project was built using platformio. Copy over all the files, keeping them in their directories. Create a new project in Visual Studio Code with the Platformio extension installed. Be sure to select the right board. Then be sure you have a data folder made for LittleFS, and the platformio.ini file has the proper lib_deps and board_build.filesystem fields. Build and run, and it should work.
 
